@@ -10,17 +10,236 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <img
+        class="photo"
         src="https://i.pinimg.com/originals/9e/2c/b5/9e2cb5cbb8ca463f96922a2bb446fd3f.jpg"
-        width="200"
-        height="300"
+        width="150"
+        height="250"
       />
-      <h1><span>Ágata Stowe,</span> 22</h1>
-      <p>Front-end developer in training</p>
-      <p />
+      <div class="datas">
+        <h1><span>Ágata Stowe,</span> 23</h1>
+        <p class="profission t60">Front-end developer in training</p>
+      </div>
     </header>
+    <main>
+      <div class="smaller-col">
+        <div class="experiences">
+          <h2>Experiências Profissionais</h2>
+          <div class="linha"></div>
+          <ul>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNsrJErDCg_fwNeMnVlHOF_IZW-4dUKtFFxQ&usqp=CAU"
+                alt="Polícia Federal"
+              />
+              <div class="content">
+                <h3><b>Suporte Técnico</b> @Policia Federal</h3>
+                <p class="period t60">De Julho de 2018 à Dezembro de 2018</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C560BAQF0vXIfG2vpKg/company-logo_200_200/0?e=2159024400&v=beta&t=9wjQwc99VGC1yMOLpyh6Yj6JCEAfMyHbmmSs0wUz56M"
+                alt="Capgemini"
+              />
+              <div class="content">
+                <h3>
+                  <b>Trainner | Programadora I | Programadora II </b> @Capgemini
+                </h3>
+                <p class="period t60">De Dezembro de 2018 à Março de 2020</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://logo.empregos.com.br/102088_G.jpg"
+                alt="Polícia Federal"
+              />
+              <div class="content">
+                <h3><b>Programadora PL III</b> @MontrealInformatica</h3>
+                <p class="period t60">Desde Março de 2020</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="formacao">
+          <h2>Formação</h2>
+          <div class="linha"></div>
+          <ul>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTKhLer1qkYruVK5K0AHdEykBF1PUwHMWp7Xw&usqp=CAU"
+                alt="SENAI Cimatec"
+              />
+              <div class="content">
+                <h3><b>Redes de Computadores</b> @SENAI Cimatec</h3>
+                <p class="period t60">
+                  De Fevereiro de 2016 à Dezembro de 2017
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="data:image/png;base64,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"
+                alt="Faculdade São Salvador"
+              />
+              <div class="content">
+                <h3>
+                  <b>Análise e Desenvolvimento de Sistemas</b> @Faculdade São
+                  Salvador
+                </h3>
+                <p class="period t60">De Fevereiro de 2018 à Julho de 2020</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bigger-col">
+        <h2>Abilities</h2>
+        <div class="abilities">
+          <div class="ability">
+            <h3>Front</h3>
+            <ul>
+              <li>
+                <p>HTML</p>
+                <div class="progress">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+              <li>
+                <p>CSS</p>
+                <div class="progress">
+                  <div class="bar"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+              <li>
+                <p>JavaScript</p>
+                <div class="progress">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+              <li>
+                <p>React</p>
+                <div class="progress">
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="ability">
+            <h3>Back</h3>
+            <ul>
+              <li>
+                <p>JAVA</p>
+                <div class="progress">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+              <li>
+                <p>Node.js</p>
+                <div class="progress">
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+              <li>
+                <p>Oracle</p>
+                <div class="progress">
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+              <li>
+                <p>PostgreSql</p>
+                <div class="progress">
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="ability">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>
+                <p>Communication</p>
+                <div class="progress">
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+              <li>
+                <p>Team work</p>
+                <div class="progress">
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+              <li>
+                <p>Time management</p>
+                <div class="progress">
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+              <li>
+                <p>Conflict management</p>
+                <div class="progress">
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                  <div class="bar half-way"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
